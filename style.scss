@@ -102,7 +102,93 @@ nav {
    }
 
 }
+//Nav End---------------------------
 
+main {
+   padding: 0 2rem;
+}
+
+.my-cart {
+  h2 {
+    font-size: 3.3rem;
+    margin: 2rem 0;
+  }
+  .cart-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid $lightgray;
+    .item-info {
+        grid-column: 1;
+        @include flex(row, flex-start, center);
+        img {
+            width: 4.8rem;
+        }
+        .song-artist{
+            @include flex(column, center, flex-start);
+            line-height: 2rem;
+            margin-left: 1.2rem;
+            width: 15rem;
+        }
+        .item-title-2{
+            color: $gray;
+        }
+    }
+    .item-category {
+        @include flex(row, flex-start, center);
+        grid-column: 1;
+        color: $gray;
+        position: relative;
+        bottom: 1rem;
+        img {
+            width: 2rem;
+        }
+        span {
+            margin-left: 0.25rem;
+        }
+    }
+    .item-controls {
+        @include flex(column, center, flex-end);
+        position: relative;
+        right: 3rem;
+        .mobile-remove-btn {
+            background: none;
+            border: none;
+            position: relative;
+            bottom: 4rem;
+        }
+        .credit-count {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+        .mobile-sfl-btn {
+            font-size: 1.4rem;
+            padding: 0.9rem;
+            width: 14rem;
+            border-radius: 50px;
+            background: none;
+            border: 1px solid $gray;
+            color: $gray;
+            position: relative;
+            top: 2rem;
+        }
+
+    }
+    .desktop-remove-sfl {
+        display: none;
+    }
+  }
+
+}
+
+.order-summary {
+  @include border();
+}
+
+.saved-for-later {
+  @include border();
+}
 
 @media screen and (min-width: 1090px){
    nav {
@@ -198,6 +284,32 @@ nav {
             }
        }
    }
+   //Mobile nav end--------------------------
+
+   main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+}
+
+.my-cart {
+  @include border();
+  grid-columns: 1;
+  grid-row: 1;
+}
+
+.order-summary {
+  @include border();
+  grid-column: 2;
+  grid-row: 1/3;
+
+}
+
+.saved-for-later {
+  @include border();
+  grid-column: 1;
+  grid-row: 2;
+}
 }
 
 
