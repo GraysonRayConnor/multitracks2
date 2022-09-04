@@ -1,0 +1,204 @@
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+$gray: #919191;
+$lightgray: #DADADA;
+$black: #000000;
+$brandblue: #43B1E6;
+
+
+@mixin border{
+    border: 1px solid red;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $lightgray;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    border-bottom: 1px solid $lightgray;
+   .desktop-logo {
+    display: none;
+   }
+   .desktop-nav-control {
+    display: none;
+   }
+
+   .nav-menu-container {
+    grid-column: 1;
+    position: relative;
+    @include flex(row, flex-start, center);
+        .nav-menu{
+            position: absolute;
+            top: 6.15rem;
+            left: -23rem;
+            padding: 2rem;
+            background: $gray;
+            width: 20rem;
+            transition: 0.3s;
+            @include flex(column, center, center);
+            border-bottom-right-radius: 1rem;
+            li {
+                margin-bottom: 4rem;
+                border-bottom: 1px solid $lightgray;
+                width: 100%;
+            }
+            a {
+                font-size: 2rem;
+            }
+        }
+   }
+
+   input[type=checkbox] {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: 0;
+   }
+
+   input[type=checkbox]:checked ~ .nav-menu {
+        left: -3rem;
+   }
+
+
+   .mobile-logo{
+    grid-columns: 2;
+    @include flex(row, center, center);
+   }
+
+   .mobile-nav-control {
+    grid-column: 3;
+    @include flex(row, flex-end, center);
+    a {
+     &:first-child {
+       margin-right: 2.5rem;
+        }
+    }
+
+   }
+
+}
+
+
+@media screen and (min-width: 1090px){
+   nav {
+    @include flex(row, space-between, center);
+    padding: 2rem;
+    .mobile-logo {
+        display: none;
+    }
+
+    .mobile-nav-control {
+        display: none;
+    }
+
+    .toggle-menu-btn, .toggle-menu {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: block;
+        @include flex(row, flex-start, center);
+        font-size: 1.5rem;
+        h1 {
+            margin-left: 0.5rem;
+            font-weight: 700;
+        }
+        span {
+            font-weight: 300;
+        }
+    }
+
+    .desktop-nav-control {
+        display: block;
+        ul {
+          @include flex(row, center, center);
+          li {
+            font-size: 1.5rem;
+            margin-right: 2rem;
+          }
+          a {
+            color: $gray;
+          }
+        }
+        img {
+            width: 1.15rem;
+            margin-right: 0.25rem;
+        }
+        form {
+            position: relative;
+            input {
+                padding: 0.5rem;
+                border: 2px solid $lightgray;
+                border-radius: 0.5rem;
+                &::placeholder {
+                    color: $lightgray;
+                }
+            }
+            img {
+                position: absolute;
+                left: 13rem;
+                top: 0.35rem;
+                width: 2rem;
+            }
+        }
+    }
+
+    .nav-menu-container {
+        position: relative;
+        @include flex(row, center, center);
+            .nav-menu{
+                position: relative;
+                top: 0;
+                right: 0;
+                left: 2rem;
+                padding: 0;
+                background: none;
+                width: auto;
+                @include flex(row, center, center);
+                border-bottom-right-radius: 0;
+                transition: 0;
+                li {
+                    margin-bottom: 0;
+                    border-bottom: 0;
+                    width: auto;
+                    margin-right: 2rem;
+                }
+                a {
+                    font-size: 1.5rem;
+                    color: $gray;
+                }
+                .special a {
+                    color: $brandblue;
+                }
+            }
+       }
+   }
+}
+
+
+
