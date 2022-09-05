@@ -8,6 +8,7 @@
 html {
   font-size: 10px;
   font-family: 'Lato', sans-serif;
+  height: 100vh;
 }
 
 li {
@@ -140,7 +141,7 @@ nav .mobile-nav-control a:first-child {
   margin-right: 2.5rem;
 }
 
-main {
+.my-cart {
   padding: 0 2rem;
 }
 
@@ -279,8 +280,141 @@ main {
   display: none;
 }
 
+.continue-shopping {
+  padding: 1.6rem 0 4rem 0;
+}
+
+.continue-shopping a {
+  color: #43B1E6;
+  font-size: 1.6rem;
+}
+
 .order-summary {
-  border: 1px solid red;
+  background: #FAFAFA;
+  padding: 4rem 2rem;
+}
+
+.order-summary h3 {
+  font-size: 2.8rem;
+  padding: 0 0 4rem 0;
+}
+
+.order-summary .order-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  margin: 0.8rem 0;
+}
+
+.order-summary .order-item .order-item-value {
+  color: #919191;
+}
+
+.order-summary .order-item img {
+  position: relative;
+  left: 11.5rem;
+}
+
+.order-summary .promo {
+  padding: 1.6rem 0;
+}
+
+.order-summary .toggle-promo {
+  opacity: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.order-summary .promo-code {
+  display: none;
+  text-align: center;
+}
+
+.order-summary .promo-code input[type=text] {
+  padding: 1rem 2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: 1px solid #DADADA;
+}
+
+.order-summary .promo-code input[type=submit] {
+  padding: 1rem 2rem;
+  color: white;
+  background: #43B1E6;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.order-summary .subtotal {
+  border-top: 1px solid #DADADA;
+  padding-top: 1.6rem;
+}
+
+.order-summary .tax {
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 1.6rem;
+}
+
+.order-summary .total {
+  border-bottom: 1px solid #DADADA;
+  padding: 1.6rem 0;
+}
+
+.order-summary .last-4 {
+  color: #919191;
+}
+
+.order-summary .edit-card {
+  color: #43B1E6;
+  text-decoration: underline;
+}
+
+.order-summary .card-info {
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 1.6rem;
+}
+
+.order-summary .place-order-container span {
+  font-size: 1.6rem;
+  color: #919191;
+  font-weight: 300;
+}
+
+.order-summary .place-order-container button {
+  display: block;
+  margin: 1.6rem auto;
+  font-size: 1.8rem;
+  width: 90%;
+  padding: 1.6rem 0;
+  background: #43B1E6;
+  border: none;
+  border-radius: 5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.order-summary .place-order-container p {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0 3rem;
+  color: #DADADA;
+}
+
+.order-summary .place-order-container p a {
+  text-decoration: underline;
 }
 
 .saved-for-later {
