@@ -328,19 +328,20 @@ nav .mobile-nav-control a:first-child {
   color: #919191;
 }
 
-.order-summary .order-item img {
-  position: relative;
-  left: 11.5rem;
-}
-
 .order-summary .promo {
   padding: 1.6rem 0;
 }
 
+.order-summary .promo div img {
+  position: relative;
+  left: 1.85rem;
+  bottom: 0.5rem;
+}
+
 .order-summary .toggle-promo {
   opacity: 0;
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .order-summary .promo-code {
@@ -1116,7 +1117,7 @@ footer .legal {
     margin: 1.6rem 0;
   }
   .order-summary .order-item img {
-    left: 12.5rem;
+    left: 10rem;
   }
   .order-summary .promo {
     padding: 2.6rem 0;
