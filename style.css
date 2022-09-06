@@ -564,6 +564,223 @@ nav .mobile-nav-control a:first-child {
   display: none;
 }
 
+footer {
+  background: #282828;
+  color: #ffffff;
+  padding: 4rem 1.2rem;
+}
+
+footer .subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-bottom: 3.2rem;
+}
+
+footer .subscribe-form label {
+  font-size: 2rem;
+}
+
+footer .subscribe-form #subscribe-input {
+  background: #000000;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px -2px #DADADA;
+          box-shadow: 0px 0px 5px -2px #DADADA;
+  padding: 1rem;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  width: 79%;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+footer .subscribe-form input[type=submit] {
+  padding: 1rem 0;
+  width: 20%;
+  background: #43B1E6;
+  color: #ffffff;
+  border: none;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+footer .have-a-problem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .have-a-problem span {
+  font-size: 2rem;
+}
+
+footer .have-a-problem a {
+  color: #919191;
+  font-size: 1.4rem;
+  padding-bottom: 3.2rem;
+}
+
+footer .footer-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 41rem;
+}
+
+footer .footer-nav .products {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+footer .footer-nav .resources {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+footer .footer-nav .company {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  position: relative;
+  bottom: 11rem;
+}
+
+footer .footer-nav .store {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+footer .footer-nav .extras {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  position: relative;
+  bottom: 11.5rem;
+}
+
+footer .footer-nav .account {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  position: relative;
+  bottom: 25rem;
+}
+
+footer .footer-nav-2 {
+  height: 27rem;
+}
+
+footer .footer-nav-item {
+  height: 25rem;
+}
+
+footer .footer-nav-item ul {
+  padding-top: 0.8rem;
+}
+
+footer .footer-nav-item li {
+  padding-bottom: 0.8rem;
+}
+
+footer .footer-nav-item a {
+  color: #919191;
+  font-size: 1.6rem;
+}
+
+footer .footer-nav-title {
+  font-size: 2rem;
+}
+
+footer .socials .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.6rem;
+  padding-bottom: 3.2rem;
+}
+
+footer .socials .social-links img {
+  width: 2.4rem;
+}
+
+footer .socials .like-follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+
+footer .socials .like-follow button {
+  width: 6.4rem;
+  background: none;
+  border: none;
+}
+
+footer .final-footer {
+  padding: 1.6rem 0 2.4rem 0;
+  text-align: center;
+  background: #171717;
+  color: #919191;
+}
+
+footer .final-footer a {
+  font-size: 1.7rem;
+  color: #919191;
+}
+
+footer .final-footer .language-icon {
+  width: 1.8rem;
+  position: relative;
+  top: 0.25rem;
+  right: 1rem;
+}
+
+footer .final-footer .chevron {
+  position: relative;
+  left: 1rem;
+  top: 0.15rem;
+}
+
 @media screen and (min-width: 1090px) {
   html {
     font-size: 12px;

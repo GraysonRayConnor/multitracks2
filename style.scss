@@ -375,6 +375,150 @@ nav {
   }
 }
 
+footer {
+    background: #282828;
+    color: #ffffff;
+    padding: 4rem 1.2rem;
+    .subscribe-form {
+        @include flex(row, center, center);
+        width: 100%;
+        padding-bottom: 3.2rem;        
+        label {
+            font-size: 2rem;
+        }
+        #subscribe-input{
+            background: $black;
+            border: none;
+            box-shadow: 0px 0px 5px -2px $lightgray;
+            padding: 1rem;
+            border-top-left-radius: 0.4rem;
+            border-bottom-left-radius: 0.4rem;
+            width: 79%;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+        input[type=submit]{
+           padding: 1rem 0;
+           width: 20%;
+           background: $brandblue;
+           color: #ffffff;
+           border: none;
+           border-top-right-radius: 0.4rem;
+           border-bottom-right-radius: 0.4rem;
+        }
+
+    }
+    .have-a-problem {
+        @include flex(column, flex-start, flex-start);
+        span {
+            font-size: 2rem;
+        }
+        a {
+            color: $gray;
+            font-size: 1.4rem;
+            padding-bottom: 3.2rem;
+        }
+    }
+    .footer-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 41rem;
+        .products {
+            grid-column: 1;
+        }
+        .resources {
+            grid-column: 2;
+        }
+        .company {
+            grid-column: 2;
+            position: relative;
+            bottom: 11rem;
+            
+        }
+        .store {
+            grid-column: 1;
+        }
+        .extras {
+            grid-column: 1;
+            position: relative;
+            bottom: 11.5rem;
+           
+        }
+        .account {
+            grid-column: 2;
+            position: relative;
+            bottom: 25rem;
+        }
+    }
+    .footer-nav-2 {
+        height: 27rem;
+    }
+    .footer-nav-item {
+        height: 25rem;
+        ul {
+            padding-top: 0.8rem;
+        }
+        li {
+            padding-bottom: 0.8rem;
+        }
+        a {
+            color: $gray;
+            font-size: 1.6rem;
+        }
+        }
+        
+    
+    .footer-nav-title {
+        font-size: 2rem;
+    }
+
+    .socials {
+       .social-links {
+        @include flex(row, center, center);
+        gap: 1.6rem;
+        padding-bottom: 3.2rem;
+
+        img {
+            width: 2.4rem;
+        }
+       }
+       .like-follow {
+        @include flex(row, center, center);
+        gap: 2rem;
+        padding-bottom: 4rem;
+        button {
+          width: 6.4rem;
+          background: none;
+          border: none;
+        }
+       }
+    }
+    .final-footer {
+        padding: 1.6rem 0 2.4rem 0;
+        text-align: center;
+        background: #171717;
+        color: $gray;
+        a {
+            font-size: 1.7rem;
+            color: $gray;
+        }
+        .language-icon{
+            width: 1.8rem;
+            position: relative;
+            top: 0.25rem;
+            right: 1rem;
+        }
+        .chevron {
+           position: relative;
+           left: 1rem;
+           top: 0.15rem;
+        }
+        .terms-privacy-contact {
+            
+        }
+    }
+}
+
 @media screen and (min-width: 1090px){
     html {
         font-size: 12px;
