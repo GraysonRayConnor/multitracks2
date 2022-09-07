@@ -13,22 +13,60 @@
     <header>
        <nav>
         <!--Desktop logo-->
-        <!--Nav menu-->
+        <!-------Nav menu------->
         <div class="nav-menu-container">
             <div class="desktop-logo">
                 <img src="assets/mt-logo.png" alt="logo">
                 <h1>MultiTracks<span>.com</span></h1>
             </div>
-            <input class="toggle-menu" type="checkbox">
             <img class="toggle-menu-btn" src="assets/more.png" alt="mobile menu button">
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#">Products</a></li>
-                <li class="nav-item"><a href="#">Songs</a></li>
-                <li class="nav-item"><a href="#">Sounds</a></li>
-                <li class="nav-item"><a href="#">Pricing</a></li>
-                <li class="nav-item"><a href="#">More</a></li>
-                <li class="nav-item special"><a href="#">COVID-19</a></li>
-            </ul>
+
+        <div class="navigation">
+            <div class="dropdown" data-dropdown>
+                <button class="nav-link" data-dropdown-button>Products <img data-dropdown-button src="assets/down-arrow.png" alt="dropdown"></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">The Connected Stage</a></li>
+                    <li><a href="#">Tracks</a></li>
+                    <li><a href="#">Playback</a></li>
+                    <li><a href="#">Pad Player</a></li>
+                    <li><a href="#">Playback Rentals</a></li>
+                    <li><a href="#">Cloud Pro</a></li>
+                    <li><a href="#">RehearsalMix</a></li>
+                    <li><a href="#">ChartBuilder</a></li>
+                    <li><a href="#">Solo Practice Bundle</a></li>
+                    <li><a href="#">Charts</a></li>
+                    <li><a href="#">ProPresenter</a></li>
+                    <li><a href="#">Sounds</a></li>
+                    <li><a href="#">Gratis License</a></li>
+                </ul>
+            </div>
+            <div class="dropdown" data-dropdown>
+                <button class="nav-link" data-dropdown-button>Songs <img data-dropdown-button src="assets/down-arrow.png" alt="dropdown"></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Songs</a></li>
+                    <li><a href="#">Songs</a></li>
+                    <li><a href="#">Songs</a></li>
+                </ul>
+            </div>
+            <div class="dropdown" data-dropdown>
+                <button class="nav-link" data-dropdown-button>Sounds <img data-dropdown-button src="assets/down-arrow.png" alt="dropdown"></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Sounds</a></li>
+                    <li><a href="#">Sounds</a></li>
+                    <li><a href="#">Sounds</a></li>
+                </ul>
+            </div>
+            <button class="nav-link">Pricing</button>
+            <div class="dropdown" data-dropdown>
+                <button class="nav-link" data-dropdown-button>More <img data-dropdown-button src="assets/down-arrow.png" alt="dropdown"></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">More</a></li>
+                    <li><a href="#">More</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+            <button class="nav-item special">COVID-19</button>
+        </div>
         </div>
         <!--Mobile logo-->
         <div class="mobile-logo">
@@ -52,8 +90,10 @@
             <a href="#"><img src="assets/user.png" alt="account button"></a>
         </div>
        </nav>
+       <!-------Nav Menu End------->
     </header>   
     <main>
+       <!-------My Cart------->
         <section class="my-cart">
             <h2>My Cart</h2>
             <article class="cart-item">
@@ -106,6 +146,8 @@
                 <a href="#">&lt; Continue shopping</a>
             </div>
         </section>
+        <!-------My Cart End------->
+        <!-------Order Summary------->
         <section class="order-summary">
             <h3>Order Summary</h3>
             <div class="order-details">
@@ -154,6 +196,8 @@
                 <p>By finalizing your order, you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
             </div>
         </section>
+        <!-------Order Summary End------->
+        <!-------Saved For Later------->
         <section class="saved-for-later">
             <h4>Saved for later</h4>
             <article class="sfl-item">
@@ -217,7 +261,9 @@
                 </div>
             </article>
         </section>
+        <!-------Saved For Later End------->
     </main>
+    <!-------Footer Nav------->
     <section class="footer-navigation">
         <div class="subscribe-form">
             <form>
@@ -311,7 +357,7 @@
                 </div>
             </div>
     </section>
-    <footer class="final-footer">
+    <footer>
         <a class="language" href="#"><img class="language-icon" src="assets/language.png" alt="language icon"> English <img class="chevron" src="assets/chevron.png" alt="language dropdown"></a>
         <div class="terms-privacy-contact">
             <span>Terms</span>
@@ -325,6 +371,7 @@
             <span>All Rights Reserved</span>
         </div>
     </footer>
+    <!-------Saved For Later End------->
     <div class="clear"></div>
     <div class="sticky-footer">
         <div>
